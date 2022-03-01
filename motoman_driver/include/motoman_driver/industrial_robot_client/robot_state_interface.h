@@ -35,6 +35,9 @@
 #include <vector>
 #include <string>
 #include <map>
+
+#include <netinet/in.h> // Needs to be before non-std headers, as they are missing type definitions
+
 #include "simple_message/smpl_msg_connection.h"
 #include "simple_message/message_manager.h"
 #include "simple_message/message_handler.h"

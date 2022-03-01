@@ -29,6 +29,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <cerrno>
+
+#include <netinet/in.h> // Needs to be before non-std headers, as they are missing type definitions
+
 #include "motoman_driver/io_relay.h"
 
 using motoman::io_relay::MotomanIORelay;

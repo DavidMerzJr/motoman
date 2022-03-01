@@ -32,6 +32,8 @@
 #ifndef MOTOMAN_DRIVER_IO_RELAY_H
 #define MOTOMAN_DRIVER_IO_RELAY_H
 
+#include <ros/ros.h>
+
 #include "simple_message/socket/tcp_client.h"
 #include "motoman_driver/io_ctrl.h"
 #include "motoman_msgs/ReadSingleIO.h"

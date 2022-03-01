@@ -30,6 +30,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <netinet/in.h> // Needs to be before non-std headers, as they are missing type definitions
+
 #include "motoman_driver/io_relay.h"
 #include <string>
 #include <cstdint>

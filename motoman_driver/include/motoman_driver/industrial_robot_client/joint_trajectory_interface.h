@@ -36,6 +36,9 @@
 #include <vector>
 #include <string>
 #include <map>
+
+#include <netinet/in.h> // Needs to be before non-std headers, as they are missing type definitions
+
 #include "ros/ros.h"
 #include "industrial_msgs/CmdJointTrajectory.h"
 #include "motoman_msgs/CmdJointTrajectoryEx.h"
