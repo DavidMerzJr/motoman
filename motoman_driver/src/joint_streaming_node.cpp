@@ -40,12 +40,20 @@ int main(int argc, char** argv)
 
   // initialize node
   ros::init(argc, argv, "motion_interface");
+  ros::NodeHandle nh;
+  ROS_ERROR("Sleeping in");
+
+  ros::Duration(2.0).sleep();
+  ROS_ERROR("Sleep over");
 
   // launch the FS100 JointTrajectoryStreamer connection/handlers
   MotomanJointTrajectoryStreamer motionInterface;
 
+  ROS_ERROR("Constructed");
   motionInterface.init("", FS100_motion_port, false);
+  ROS_ERROR("Initialized");
   motionInterface.run();
+  ROS_ERROR("Running");
 
   return 0;
 }
